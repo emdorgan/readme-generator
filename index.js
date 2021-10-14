@@ -63,6 +63,10 @@ function init() {
         .prompt(questions)
         .then((data) => {
             console.log(data);
+            let markdownLiteral = generateMarkdown(data);
+            fs.writeFile('README.md', markdownLiteral, (err) =>
+                err ? console.error(err) : console.log('Success!')
+            );
         })
 }
 

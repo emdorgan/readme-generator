@@ -11,6 +11,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+// This function accepts an object as it's argument which is the data the the user was asked.
 function generateMarkdown(data) {
   return `# ${data.title}
 
