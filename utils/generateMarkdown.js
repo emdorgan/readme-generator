@@ -20,64 +20,78 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if(license === "MIT"){
+    return 'https://opensource.org/licenses/MIT';
+  }
+  else if(license === "Mozilla"){
+    return 'https://opensource.org/licenses/MPL-2.0';
+  }
+  else if(license === "GNU GPL v3"){
+    return 'https://www.gnu.org/licenses/gpl-3.0';
+  }
+  else if(license === "ISC"){
+    return 'https://opensource.org/licenses/ISC';
+  }
+  else {
+    return '';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-return `
-## License
+  if(license === 'no license (not recommended)'){
+    return '';
+  }
+return `## License
 
-This project is licensed under the ??? License
+This project is licensed under the [${license} License](${renderLicenseLink(license)})
 `
 }
 
 // TODO: Create a function to generate markdown for README
 // This function accepts an object as it's argument which is the data the the user was asked.
 function generateMarkdown(data) {
+  return `# ${data.title}
 
-let licenseBadge = renderLicenseBadge(data.license);
-let licenseSection = renderLicenseSection(data.license);
+  ${renderLicenseBadge(data.license)}
 
-return `# ${data.title}
+  ${data.description}
 
-${licenseBadge}
+  ## Table of Contents 
 
-${data.description}
+  * [Installation Instructions](#installation)
+  * [Usage Instructions](#usage)
+  * [Contribution Guidelines](#contribution-guidelines)
+  * [Test Instructions](#test-instructions)
+  * [Questions](#questions)
+  * [License](#license)
 
-## Table of Contents 
+  ## Installation
 
-* [Installation Instructions](#installation)
-* [Usage Instructions](#usage)
-* [Contribution Guidelines](#contribution-guidelines)
-* [Test Instructions](#test-instructions)
-* [Questions](#questions)
-* [License](#license)
+  ${data.installation}
 
-## Installation
+  ## Usage
 
-${data.installation}
+  ${data.usage}
 
-## Usage
+  ## Contribution Guidelines
 
-${data.usage}
+  ${data.contribution}
 
-## Contribution Guidelines
+  ## Test Instructions
 
-${data.contribution}
+  ${data.tests}
 
-## Test Instructions
+  ## Questions
 
-${data.tests}
+  If you have any questions you can reach me at:
 
-## Questions
+  * [Github](https://github.com/${data.github})
+  * [Email](mailto:${data.email})
 
-If you have any questions you can reach me at:
-
-* [Github](https://github.com/${data.github})
-* [Email](mailto:${data.email})
-
-${licenseSection}`;
+  ${renderLicenseSection(data.license)}`;
 }
 
 module.exports = generateMarkdown;

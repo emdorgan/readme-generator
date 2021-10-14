@@ -1,44 +1,41 @@
-# Project titel
+# Cum
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-sfkdsfjdsalkfjdsakj
+  desc
 
-## Table of Contents 
+  ## Table of Contents 
 
-* [Installation Instructions](#installation)
-* [Usage Instructions](#usage)
-* [Contribution Guidelines](#contribution-guidelines)
-* [Test Instructions](#test-instructions)
-* [Questions](#questions)
-* [License](#license)
+  * [Installation Instructions](#installation)
+  * [Usage Instructions](#usage)
+  * [Contribution Guidelines](#contribution-guidelines)
+  * [Test Instructions](#test-instructions)
+  * [Questions](#questions)
+  * [License](#license)
 
-## Installation
+  ## Installation
 
-install instr
+  inst
 
-## Usage
+  ## Usage
 
-usage goes here
+  use
 
-## Contribution Guidelines
+  ## Contribution Guidelines
 
-contribution guidelines here
+  con
 
-## Test Instructions
+  ## Test Instructions
 
-test instructions here
+  test
 
-## Questions
+  ## Questions
 
-If you have any questions you can reach me at:
+  If you have any questions you can reach me at:
 
-* [Github](https://github.com/emdorgan)
-* [Email](mailto:wmdorgan@gmail.com)
+  * [Github](https://github.com/emdorgan)
+  * [Email](mailto:no@email)
 
-## License
+  ## License
 
-
-## License
-
-This project is licensed under the ??? License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
