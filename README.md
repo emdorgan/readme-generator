@@ -1,4 +1,4 @@
-# Project Name
+# README.md generator
 
 
 
@@ -8,8 +8,10 @@
 
 ## Getting Started
 
-Requires node.js installed
-Requires access to a terminal viewer (such as gitbash)
+* Requires node.js installed
+* Requires access to a terminal viewer (such as gitbash)
+* Requires use to run 'npm install'
+* requires the user to run 'node index.js"
 
 ## Screenshots
 
@@ -17,10 +19,8 @@ Requires access to a terminal viewer (such as gitbash)
 
 ## Built With
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [Bootstrap](https://getbootstrap.com/)
+* [Node.js]()
 
 
 ## Authors

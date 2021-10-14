@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdorgan/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emdorgan/readme-generator/issues"
+  },
+  "homepage": "https://github.com/emdorgan/readme-generator#readme",
+  "keywords": []
 }
