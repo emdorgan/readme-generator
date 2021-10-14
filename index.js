@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message:'Welcome to the README.md generator 2000, What is the title of your project?',
+        message:'Welcome to the PROFESSIONAL README.md GENERATOR, What is the title of your project?',
     },
     {
         type: 'input',
@@ -50,7 +50,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message:'Please choose a lisence for the project',
-        choices: ['MIT', 'Mozilla', 'GNU GPL v3', 'ISC']
+        choices: ['MIT', 'Mozilla', 'GNU GPL v3', 'ISC', 'no license (not recommended)']
     },
 ];
 
@@ -58,7 +58,13 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((data) => {
+            console.log(data);
+        })
+}
 
 // Function call to initialize app
 init();
