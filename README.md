@@ -1,41 +1,34 @@
-# Cum
+# Project Title
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  desc
 
-  ## Table of Contents 
+## Table of Contents 
 
-  * [Installation Instructions](#installation)
-  * [Usage Instructions](#usage)
-  * [Contribution Guidelines](#contribution-guidelines)
-  * [Test Instructions](#test-instructions)
-  * [Questions](#questions)
-  * [License](#license)
+* [Installation Instructions](#installation)
+* [Usage Instructions](#usage)
+* [Contribution Guidelines](#contribution-guidelines)
+* [Test Instructions](#test-instructions)
+* [Questions](#questions)
+* [License](#license)
 
-  ## Installation
+## Installation
 
-  inst
 
-  ## Usage
 
-  use
+## Usage
 
-  ## Contribution Guidelines
 
-  con
 
-  ## Test Instructions
+## Contribution Guidelines
 
-  test
 
-  ## Questions
 
-  If you have any questions you can reach me at:
+## Test Instructions
 
-  * [Github](https://github.com/emdorgan)
-  * [Email](mailto:no@email)
 
-  ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
+## Questions
+
+
+
+## License
