@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Three packages are initialized. One is inherent to node.js (fs), one is just refering to a local file (generateMarkdown) and one is an external package (inquierer)
 
 const fs = require("fs");
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
 
-// TODO: Create an array of questions for user input
+// This is an array of objects following inquirer's notation documentation
 const questions = [
     {
         type: 'input',
@@ -54,18 +54,23 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// This function uses file system (fs)'s writeFile method, using the fileName argument and the data I recieved from the user (in the form of an object), 
+// This is immediately passed along to the generateMarkdown function 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
 
-// TODO: Create a function to initialize app
+}
+
+// Once the app runs, i use inquirer package to ask the user questions about the app using the array of objects called 'questions'
+// then (when the promise gets resolved), I invoke writeToFile and pass along the data as an argument and the filename as a string.
+
 function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            let markdownLiteral = generateMarkdown(data);
-            fs.writeFile('YourREADME.md', markdownLiteral, (err) =>
-                err ? console.error(err) : console.log('Success!')
-            );
+            writeToFile('YourREADME.md', data)
         })
 }
 

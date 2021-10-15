@@ -1,5 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+
 // If there is no license, return an empty string
+// I use if statements based on the value of data data.license (which is being passed through the function as an argument)
 function renderLicenseBadge(license) {
   if(license === "MIT"){
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -18,7 +19,6 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license === "MIT"){
@@ -38,8 +38,9 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+
 // If there is no license, return an empty string
+// This function returns as template literal with the license and also calls the 'render license link' function.
 function renderLicenseSection(license) {
   if(license === 'no license (not recommended)'){
     return '';
@@ -50,8 +51,11 @@ This project is licensed under the [${license} License](${renderLicenseLink(lice
 `
 }
 
-// TODO: Create a function to generate markdown for README
+
 // This function accepts an object as it's argument which is the data the the user was asked.
+// the main function which constructs the markdown, it also calls the functions renderLicenseBadge and renderLicenseSection (passing in the user choice of license as an argument) 
+// which works because those functions all return strings (which fits perfectly into the template literal)
+
 function generateMarkdown(data) {
   return `# ${data.title}
 
